@@ -18,4 +18,4 @@ jobs:
         uses: docker/setup-buildx-action@v2
 
       - name: Build the Docker image
-        run: docker build ./FASTAPI --file ./FASTAPI/Dockerfile --tag my-image-name:$(date +%s)
+        run: docker build ./fastapi --file ./fastapi/Dockerfile --tag my-image-name:$(date +%s)
